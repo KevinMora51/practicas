@@ -1,0 +1,25 @@
+@startuml
+class Chumi{
+    + Consume(foco)
+    - Vida ; vida
+}
+class Foco{
+    - Piedra : piedra    
+    + Fumar(): Humo
+}
+class Piedra{
+    - Humo : humo
+    + Quemar() :humo
+}
+class Humo
+class Jugador
+class Vida
+class Numero
+Chumi *-- Vida
+Jugador o-- Chumi
+Foco *-- Piedra
+Foco o-- Piedra
+Chumi o-- Foco
+Piedra *-- Humo
+Vida o-- Numero
+@enduml
