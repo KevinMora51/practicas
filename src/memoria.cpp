@@ -92,11 +92,18 @@ int main(int argc, char const *argv[])
     //c
     chorizo* punteroC =(chorizo*)malloc(sizeof(chorizo));
     (*punteroC).Inicializar();
+    free(punteroC);
     
     //c++
     chorizo* punteroCxx = new chorizo();
-    delete punteroCxx;
+    delete punteroCxx ;
 
+    //indireccion vs operador 
+    // inireccion 
+    (*punteroCxx).Inicializar();
+    // Operador ->
+    punteroCxx->Inicializar();
+    
 
 
     return 0;
