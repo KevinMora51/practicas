@@ -1,0 +1,19 @@
+@startuml pokedex
+
+enum TipoPokemon {
+    FUEGO,
+    AGUA,
+    PLANTA,
+    ELECTRICIDAD
+}
+
+class Pokemon{
+    -nombre : Texto
+    -tipo : TipoPokemon
+    -nivel : Nuevo
+    +string GetNombre()
+}
+
+Pokemon "1" *-- "*" TipoPokemon
+
+@enduml

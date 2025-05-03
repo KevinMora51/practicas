@@ -51,8 +51,7 @@ int main(int argc, char const *argv[])
         cout << "Nombre: "<< p.nombre<< ",Edad: "<<p.edad<<endl;
    }
    
-
-    //cerrar archivo de salida
+     //cerrar archivo de salida
     archivoEntrada.close();
 
    
